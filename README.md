@@ -1,4 +1,4 @@
-🔥 Note Taking App
+🌸 Note Taking App 🌸
 
 A simple, interactive, and browser-based note taking application created using **HTML, CSS, and JavaScript**.
 
