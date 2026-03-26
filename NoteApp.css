@@ -1,0 +1,63 @@
+* { padding:0; margin:0; box-sizing:border-box; font-family:"Segoe UI", sans-serif; }
+
+body { background: #f5f6fa; }
+
+#Container {
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:120px 20px 50px;
+    background: linear-gradient(135deg,#81ecec,#74b9ff);
+}
+
+.APP {
+    width:100%;
+    background:#2d3436;
+    padding:15px 30px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
+
+.heading h1 { color:#ffeaa7; font-size:24px; }
+
+.buttons button {
+    padding:10px 15px; margin-left:10px;
+    background:#0984e3; color:#fff;
+    border-radius:8px; border:none; cursor:pointer; font-size:15px; transition:0.3s;
+}
+.buttons button:hover { background:#74b9ff; transform:scale(1.05); }
+
+.note {
+    width:300px; height:260px; margin:15px;
+    border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    display:flex; flex-direction:column; overflow:hidden; animation:fadeIn 0.3s ease;
+}
+
+.yellow{background:#fff9c4;} .green{background:#d4f8d4;} .pink{background:#ffd6e7;} .blue{background:#d6f0ff;}
+
+.icons {
+    padding:8px; cursor:pointer; display:flex; gap:12px; justify-content:flex-end;
+    border-bottom:1px solid #ddd;
+}
+.icons i{font-size:18px; transition:0.3s;}
+.icons i:hover{transform:scale(1.2);}
+
+.title-div textarea {
+    border:none; background:rgba(0,0,0,0.05); font-weight:bold; font-size:18px;
+    padding:8px; resize:none; width:100%;
+}
+
+.note textarea.content {
+    flex:1; border:none; resize:none; font-size:16px; padding:10px; width:100%; background:transparent;
+}
+.note textarea:focus{outline:none;}
+
+@keyframes fadeIn{from{opacity:0;transform:scale(0.9);} to{opacity:1;transform:scale(1);}}
